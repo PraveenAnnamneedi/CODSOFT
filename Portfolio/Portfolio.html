@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveen Annamneedi | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #ff8800;
+        --background: #fefefe;
+        --dark: #1c1c1c;
+        --light: #f9f9f9;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--background);
+        color: var(--dark);
+      }
+
+      header {
+        background-color: var(--dark);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #ccc;
+        margin-top: 10px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      section {
+        margin-bottom: 60px;
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--primary);
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+
+      .about img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .about p {
+        font-size: 1.1rem;
+        max-width: 700px;
+      }
+
+      .skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+      }
+
+      .skills li {
+        background: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        font-weight: 500;
+        transition: 0.3s ease;
+      }
+
+      .skills li:hover {
+        background: var(--primary);
+        color: white;
+        cursor: default;
+      }
+
+      .projects .project-card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        transition: transform 0.3s ease;
+      }
+
+      .projects .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .resume a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 24px;
+        background-color: var(--primary);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .resume a:hover {
+        background-color: #e06e00;
+      }
+
+      .contact p {
+        font-size: 1.1rem;
+        margin: 10px 0;
+      }
+
+      footer {
+        background: var(--dark);
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .skills ul {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Praveen Annamneedi</h1>
+      <p>B.Tech CSE | Web Developer | Programmer</p>
+    </header>
+
+    <div class="container">
+      <section class="about">
+        <h2>About Me</h2>
+        <img src="Praveen.jpg" alt="Praveen's photo" />
+        <p>
+          Hello! I'm <strong>Praveen Annamneedi</strong>, currently pursuing my
+          B.Tech in Computer Science and Engineering from Bonam Venkata
+          Chalamayya Engineering College. I'm passionate about web development
+          and programming. I love turning ideas into interactive digital
+          experiences.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (Basic)</li>
+          <li>Responsive Design</li>
+          <li>C / C++</li>
+          <li>Python</li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Landing Page</h3>
+          <p>
+            A modern and responsive landing page built using HTML and CSS to
+            showcase beginner front-end skills.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            This personal portfolio built using clean HTML/CSS showcases my
+            skills, projects, and contact info.
+          </p>
+        </div>
+      </section>
+
+      <section class="resume">
+        <h2>Resume</h2>
+        <p>Download my updated resume below:</p>
+        <a href="resume.pdf" download>Download Resume</a>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> praveenannamneedi@example.com</p>
+        <p><strong>Phone:</strong> +91-8712112236</p>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2025 Praveen Annamneedi | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
